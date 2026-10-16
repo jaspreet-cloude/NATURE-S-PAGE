@@ -537,6 +537,256 @@ blockquote {
   letter-spacing: 0.09em;
 }
 
+h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.seasons {
+  padding-top: 95px;
+  padding-bottom: 105px;
+}
+
+.seasons .section-heading h2 em,
+.principles h2 em,
+.journal .section-heading h2 em,
+.closing h2 em {
+  color: #748168;
+}
+
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #d8dacf;
+}
+
+.season-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #d8dacf;
+  padding: 32px 26px 10px;
+  transition: background 220ms ease;
+}
+
+.season-card:first-child {
+  padding-left: 0;
+}
+
+.season-card:last-child {
+  border-right: 0;
+}
+
+.season-card:hover {
+  background: #eeeee7;
+}
+
+.season-icon {
+  margin-bottom: 30px;
+  color: #70826b;
+  font-size: 26px;
+  line-height: 1;
+}
+
+.season-card .card-kicker {
+  color: #7b8075;
+}
+
+.season-card h3 {
+  font-size: 30px;
+}
+
+.season-card p,
+.principles-intro > p,
+.principle-list p,
+.closing p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.season-card p {
+  margin: 12px 0 0;
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  padding-top: 100px;
+  padding-bottom: 105px;
+  background: var(--forest);
+  color: #fff;
+}
+
+.principles .section-number {
+  color: rgb(255 255 255 / 62%);
+}
+
+.principles h2 {
+  margin-top: 17px;
+  font-size: clamp(36px, 4.2vw, 52px);
+}
+
+.principles h2 em {
+  color: #d4d9ba;
+}
+
+.principles-intro > p {
+  max-width: 330px;
+  margin: 22px 0 40px;
+  color: rgb(255 255 255 / 70%);
+}
+
+.stats {
+  display: flex;
+  gap: 42px;
+  margin: 0;
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.stats dt {
+  margin-top: 6px;
+  color: rgb(255 255 255 / 62%);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.stats dd {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 40px;
+  letter-spacing: -0.03em;
+}
+
+.principle-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.principle-list li {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid rgb(255 255 255 / 18%);
+  padding: 24px 0;
+}
+
+.principle-list li:first-child {
+  padding-top: 0;
+}
+
+.principle-number {
+  padding-top: 6px;
+  color: #d4d9ba;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.principle-list h3 {
+  font-size: 24px;
+}
+
+.principle-list p {
+  margin: 6px 0 0;
+  color: rgb(255 255 255 / 66%);
+}
+
+.journal {
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.journal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.journal-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-bottom: 20px;
+  background-color: #53664e;
+  background-position: center;
+  background-size: cover;
+  transition: opacity 220ms ease;
+}
+
+.journal-card:hover .journal-image {
+  opacity: 0.88;
+}
+
+.journal-image-dawn {
+  background-image: url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=850&q=80");
+}
+
+.journal-image-camp {
+  background-image: url("https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=850&q=80");
+}
+
+.journal-image-moss {
+  background-image: url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=850&q=80");
+}
+
+.journal-meta {
+  color: #7b8075;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.journal-card h3 {
+  margin: 12px 0 20px;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.journal-card .text-link {
+  margin-top: auto;
+}
+
+.closing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 90px;
+  padding-bottom: 95px;
+  background: #eeeee7;
+  text-align: center;
+}
+
+.closing h2 {
+  margin-top: 14px;
+}
+
+.closing p {
+  margin: 14px 0 28px;
+}
+
+.button-dark {
+  background: var(--forest);
+  color: #fff;
+}
+
+.button-dark:hover {
+  background: #3a5243;
+}
+
 @keyframes rise-in {
   from {
     opacity: 0;
@@ -643,6 +893,46 @@ blockquote {
     min-height: 300px;
   }
 
+  .seasons,
+  .journal {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
+  .season-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .season-card,
+  .season-card:first-child {
+    border-bottom: 1px solid #d8dacf;
+    padding: 26px 20px 22px;
+  }
+
+  .season-card:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .principles {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding-top: 75px;
+    padding-bottom: 80px;
+  }
+
+  .journal-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .journal-card:last-child {
+    display: none;
+  }
+
+  .closing {
+    padding-top: 70px;
+    padding-bottom: 75px;
+  }
+
   .site-footer {
     grid-template-columns: 1fr 1fr;
     padding-right: 8%;
@@ -676,7 +966,8 @@ blockquote {
     font-size: 9px;
   }
 
-  .main-nav a:nth-child(2) {
+  .main-nav a:nth-child(2),
+  .main-nav a:nth-child(3) {
     display: none;
   }
 
@@ -751,6 +1042,37 @@ blockquote {
   .place-card:last-child {
     min-height: 350px;
     grid-column: auto;
+  }
+
+  .season-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .season-card,
+  .season-card:first-child {
+    border-right: 0;
+    padding: 24px 0;
+  }
+
+  .season-icon {
+    margin-bottom: 18px;
+  }
+
+  .stats {
+    gap: 28px;
+  }
+
+  .stats dd {
+    font-size: 34px;
+  }
+
+  .journal-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .journal-card:last-child {
+    display: flex;
   }
 
   .quote-section {
